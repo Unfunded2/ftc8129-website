@@ -161,10 +161,45 @@ section:hover {
 }
 .about .about-photo img {
 	display: block;
-	max-width: 420px;
+	max-width: 720px;
 	width: 100%;
 	height: auto;
 	margin: 0.5rem auto 0;
+}
+
+/* Photos page pattern */
+.photo-pattern {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 16px;
+}
+.photo-pattern .large {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+}
+.photo-pattern .stack {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.photo-pattern .stack img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}
+
+@media(max-width:919px){
+	.photo-pattern { grid-template-columns: 1fr; }
+	.photo-pattern .stack { flex-direction: row; }
+	.photo-pattern .stack img { width: 50%; }
+}
+@media(max-width:719px){
+	.photo-pattern { grid-template-columns: 1fr; }
+	.photo-pattern .stack { flex-direction: column; }
+	.photo-pattern .stack img { width: 100%; }
 }
 .events img {
 	max-width: 600px;
