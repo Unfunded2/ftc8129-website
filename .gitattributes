@@ -1,2 +1,45 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Store large binary assets in Git LFS
+*.[pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][eE][gG] filter=lfs diff=lfs merge=lfs -text
+*.[gG][iI][fF] filter=lfs diff=lfs merge=lfs -text
+*.[bB][mM][pP] filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF] filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF][fF] filter=lfs diff=lfs merge=lfs -text
+*.[wW][eE][bB][pP] filter=lfs diff=lfs merge=lfs -text
+*.[iI][cC][oO] filter=lfs diff=lfs merge=lfs -text
+*.[pP][sS][dD] filter=lfs diff=lfs merge=lfs -text
+*.[sS][vV][gG] filter=lfs diff=lfs merge=lfs -text
+
+# Web and game binaries
+*.[wW][aA][sS][mM] filter=lfs diff=lfs merge=lfs -text
+*.[gG][lL][bB] filter=lfs diff=lfs merge=lfs -text
+*.[gG][lL][tT][fF] filter=lfs diff=lfs merge=lfs -text
+*.[fF][bB][xX] filter=lfs diff=lfs merge=lfs -text
+
+# Audio assets
+*.[mM][pP]3 filter=lfs diff=lfs merge=lfs -text
+*.[wW][aA][vV] filter=lfs diff=lfs merge=lfs -text
+*.[oO][gG][gG] filter=lfs diff=lfs merge=lfs -text
+*.[fF][lL][aA][cC] filter=lfs diff=lfs merge=lfs -text
+
+# Video assets
+*.[mM][pP]4 filter=lfs diff=lfs merge=lfs -text
+*.[mM][oO][vV] filter=lfs diff=lfs merge=lfs -text
+*.[wW][eE][bB][mM] filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.[tT][tT][fF] filter=lfs diff=lfs merge=lfs -text
+*.[oO][tT][fF] filter=lfs diff=lfs merge=lfs -text
+*.[wW][oO][fF][fF] filter=lfs diff=lfs merge=lfs -text
+*.[wW][oO][fF][fF]2 filter=lfs diff=lfs merge=lfs -text
+
+# Archives and bundles
+*.[zZ][iI][pP] filter=lfs diff=lfs merge=lfs -text
+*.[tT][aA][rR] filter=lfs diff=lfs merge=lfs -text
+*.[tT][gG][zZ] filter=lfs diff=lfs merge=lfs -text
+*.tar.[gG][zZ] filter=lfs diff=lfs merge=lfs -text
+*.[gG][zZ] filter=lfs diff=lfs merge=lfs -text
+*.[bB][zZ]2 filter=lfs diff=lfs merge=lfs -text
+*.[xX][zZ] filter=lfs diff=lfs merge=lfs -text
+*.7[zZ] filter=lfs diff=lfs merge=lfs -text
